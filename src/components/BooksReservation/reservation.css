@@ -1,0 +1,10 @@
+.reservationForm {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.formReservationBtn {
+  margin: 10px;
+  padding: 10px;
+}

@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import LogInForm from "./components/LogIn/LogInForm";
+import RegisterForm from "./components/LogIn/RegisterForm";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import BookReservation from "./components/BooksReservation/BookReservation";
+import UserContextProvider from "./context/Context";
+import News from "./components/News/News";
+import Recommendations from "./components/Recommendations/Recommendations";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContextProvider>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<LogInForm />}></Route>
+            <Route path="/register" element={<RegisterForm />}></Route>
+            <Route
+              path="/bookreservation"
+              element={<BookReservation />}
+            ></Route>
+            <Route path="/news" element={<News />}></Route>
+            <Route
+              path="/recommendations"
+              element={<Recommendations />}
+            ></Route>
+          </Routes>
+        </Layout>
+      </Router>
+    </UserContextProvider>
   );
 }
 

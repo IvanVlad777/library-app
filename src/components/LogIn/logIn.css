@@ -1,0 +1,17 @@
+form {
+  margin-bottom: 2rem;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+}
+
+.logInBtn {
+  margin: 10px;
+  padding: 10px;
+}
+
+.switchBtn {
+  padding: 10px;
+}

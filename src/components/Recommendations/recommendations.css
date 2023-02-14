@@ -1,0 +1,17 @@
+.book_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book_list > div {
+  flex: 1 0 21%;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid rgb(131, 131, 222);
+}
+
+.book_list > div:hover {
+  -webkit-box-shadow: 4px 8px 22px -8px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 4px 8px 22px -8px rgba(0, 0, 0, 0.63);
+  box-shadow: 4px 8px 22px -8px rgba(0, 0, 0, 0.63);
+}

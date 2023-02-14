@@ -1,0 +1,13 @@
+.layout {
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+.children {
+  display: flex;
+  justify-content: center;
+}
